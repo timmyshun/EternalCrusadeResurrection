@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Gameplay/GAS/Abilities/ECRGameplayAbility.h"
+#include "Misc/DataValidation.h"
 #include "ECRGameplayAbility_FromEquipment.generated.h"
 
 class UECREquipmentInstance;
@@ -30,7 +31,7 @@ public:
 	UECRInventoryItemInstance* GetAssociatedItem(UObject* SourceObject = nullptr) const;
 
 #if WITH_EDITOR
-	virtual EDataValidationResult IsDataValid(TArray<FText>& ValidationErrors) override;
+	virtual EDataValidationResult IsDataValid(FDataValidationContext& Context) override;
 #endif
 
 };

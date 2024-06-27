@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
 #include "Online/ECROnlineSubsystem.h"
+#include "Interfaces/OnlineSessionInterface.h"
 #include "ECRGameInstance.generated.h"
 
 

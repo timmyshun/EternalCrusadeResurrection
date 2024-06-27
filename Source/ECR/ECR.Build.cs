@@ -25,7 +25,8 @@ public class ECR : ModuleRules
 			"PhysicsCore", 
 			"SignificanceManager", 
 			"ChaosVehicles",
-		});
+            "CoreOnline"
+        });
 
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{

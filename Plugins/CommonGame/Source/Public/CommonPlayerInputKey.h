@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CommonUserWidget.h"
+#include "CommonInput/Public/CommonInputTypeEnum.h"
 #include "CommonPlayerInputKey.generated.h"
 
 class UCommonLocalPlayer;

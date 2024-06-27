@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "BlueprintGraph/Classes/K2Node_AsyncAction.h"
+#include "Editor/BlueprintGraph/Classes/K2Node_AsyncAction.h"
 #include "CoreMinimal.h"
 #include "UObject/ObjectMacros.h"
 

@@ -99,7 +99,7 @@ void UCustomizationSavingNameSpace::SaveMaterialCustomizationData(bool bDoOverwr
 	for (auto [Namespace, CustomizationData] : MaterialCustomizationData)
 	{
 		// Getting direct children components
-		TArray<TObjectPtr<USceneComponent>> DirectChildren;
+		TArray<USceneComponent*> DirectChildren;
 		GetChildrenComponents(false, DirectChildren);
 
 		const FString DestinationFilename = UCustomizationUtilsLibrary::GetFilenameFromRelativePath(

@@ -20,13 +20,13 @@ void UECRAnimInstance::InitializeWithAbilitySystem(UAbilitySystemComponent* ASC)
 }
 
 #if WITH_EDITOR
-EDataValidationResult UECRAnimInstance::IsDataValid(TArray<FText>& ValidationErrors)
+EDataValidationResult UECRAnimInstance::IsDataValid(FDataValidationContext& Context)
 {
-	Super::IsDataValid(ValidationErrors);
+	Super::IsDataValid(Context);
 
-	GameplayTagPropertyMap.IsDataValid(this, ValidationErrors);
+	GameplayTagPropertyMap.IsDataValid(this, Context);
 
-	return ((ValidationErrors.Num() > 0) ? EDataValidationResult::Invalid : EDataValidationResult::Valid);
+	return EDataValidationResult::Valid;
 }
 #endif // WITH_EDITOR
 

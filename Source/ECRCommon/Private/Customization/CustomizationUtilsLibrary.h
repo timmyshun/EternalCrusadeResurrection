@@ -8,7 +8,9 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "Misc/Paths.h"
+#include "Engine/SkinnedAssetCommon.h"
 #include "CustomizationUtilsLibrary.generated.h"
+
 
 /**
  * 

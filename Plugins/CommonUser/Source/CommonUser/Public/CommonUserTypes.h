@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
+#include "OnlineError.h"
 #if COMMONUSER_OSSV1
 
 // Online Subsystem (OSS v1) includes and forward declares
@@ -17,8 +17,8 @@ using ELoginStatusType = ELoginStatus::Type;
 #else
 
 // Online Services (OSS v2) includes and forward declares
-#include "Online/Connectivity.h"
-#include "Online/OnlineError.h"
+#include "Connectivity.h"
+#include "OnlineError.h"
 namespace UE::Online
 {
 	enum class ELoginStatus : uint8;

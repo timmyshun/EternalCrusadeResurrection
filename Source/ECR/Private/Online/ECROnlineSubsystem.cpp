@@ -3,6 +3,7 @@
 
 #include "Online/ECROnlineSubsystem.h"
 #include "System/MatchSettings.h"
+#include "Online/OnlineSessionNames.h"
 
 
 FECRMatchResult::FECRMatchResult()

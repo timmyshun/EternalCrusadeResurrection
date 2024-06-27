@@ -9,6 +9,7 @@
 #include "OnlineSubsystem.h"
 #include "Algo/Accumulate.h"
 #include "Interfaces/OnlineIdentityInterface.h"
+#include "Online/OnlineSessionNames.h"
 
 
 UECRGameInstance::UECRGameInstance()

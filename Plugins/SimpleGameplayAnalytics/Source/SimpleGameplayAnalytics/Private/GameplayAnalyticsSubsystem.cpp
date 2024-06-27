@@ -1,6 +1,6 @@
 ﻿#include "GameplayAnalyticsSubsystem.h"
-#include "Json/Public/Dom/JsonObject.h"
-#include "Json/Public/Dom/JsonValue.h"
+#include "Dom/JsonObject.h"
+#include "Dom/JsonValue.h"
 
 TSharedPtr<FJsonObject> FGameplayAnalyticsEventData::ToJson()
 {

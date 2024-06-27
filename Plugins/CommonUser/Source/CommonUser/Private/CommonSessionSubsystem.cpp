@@ -11,6 +11,7 @@
 #include "Online.h"
 #include "OnlineSubsystemSessionSettings.h"
 #include "OnlineSubsystemUtils.h"
+#include "Online/OnlineSessionNames.h"
 #include "Interfaces/OnlineIdentityInterface.h"
 
 FName SETTING_ONLINESUBSYSTEM_VERSION(TEXT("OSSv1"));

@@ -34,20 +34,20 @@ UECRInventoryItemInstance* UECRGameplayAbility_FromEquipment::GetAssociatedItem(
 
 
 #if WITH_EDITOR
-EDataValidationResult UECRGameplayAbility_FromEquipment::IsDataValid(TArray<FText>& ValidationErrors)
+EDataValidationResult UECRGameplayAbility_FromEquipment::IsDataValid(FDataValidationContext& Context)
 {
-	EDataValidationResult Result = Super::IsDataValid(ValidationErrors);
+	EDataValidationResult Result = Super::IsDataValid(Context);
 
 	if (InstancingPolicy == EGameplayAbilityInstancingPolicy::NonInstanced)
 	{
-		ValidationErrors.Add(NSLOCTEXT("ECR", "EquipmentAbilityMustBeInstanced",
+		Context.AddError(NSLOCTEXT("ECR", "EquipmentAbilityMustBeInstanced",
 		                               "Equipment ability must be instanced"));
 		Result = EDataValidationResult::Invalid;
 	}
 
 	if (AbilityTags.HasTag(FECRGameplayTags::Get().Ability_Behavior_SurvivesDeath))
 	{
-		ValidationErrors.Add(NSLOCTEXT("ECR", "EquipmentAbilityCannotSurviveDeath",
+		Context.AddError(NSLOCTEXT("ECR", "EquipmentAbilityCannotSurviveDeath",
 		                               "Equipment ability cannot have tag Ability_Behavior_SurvivesDeath"));
 		Result = EDataValidationResult::Invalid;
 	}

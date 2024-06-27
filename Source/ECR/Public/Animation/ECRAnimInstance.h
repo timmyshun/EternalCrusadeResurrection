@@ -29,7 +29,7 @@ public:
 protected:
 
 #if WITH_EDITOR
-	virtual EDataValidationResult IsDataValid(TArray<FText>& ValidationErrors) override;
+	virtual EDataValidationResult IsDataValid(FDataValidationContext& Context) override;
 #endif // WITH_EDITOR
 
 	virtual void NativeInitializeAnimation() override;

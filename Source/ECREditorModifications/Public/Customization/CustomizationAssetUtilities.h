@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Blutility/Classes/AssetActionUtility.h"
+#include "Editor/Blutility/Classes/AssetActionUtility.h"
 #include "CustomizationAssetUtilities.generated.h"
 
 /**

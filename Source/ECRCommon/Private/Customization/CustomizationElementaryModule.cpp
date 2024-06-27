@@ -112,7 +112,7 @@ FString UCustomizationElementaryModule::GetFirstMaterialNameSpaceRaw(const UScen
 UCustomizationElementaryAsset* UCustomizationElementaryModule::SaveToDataAsset(bool bDoOverwrite) const
 {
 	// Getting all children components
-	TArray<TObjectPtr<USceneComponent>> AllChildren;
+	TArray<USceneComponent*> AllChildren;
 	GetChildrenComponents(true, AllChildren);
 
 	// Return if no skeletal mesh

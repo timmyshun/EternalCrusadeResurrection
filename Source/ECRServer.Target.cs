@@ -8,7 +8,7 @@ public class ECRServerTarget : TargetRules
     public ECRServerTarget(TargetInfo Target) : base(Target)
     {
         Type = TargetType.Server;
-        DefaultBuildSettings = BuildSettingsVersion.V2;
+        DefaultBuildSettings = BuildSettingsVersion.V5;
         ExtraModuleNames.Add("ECR");
         RegisterModulesCreatedByRider();
     }

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "FindSessionsCallbackProxy.h"
+#include "OnlineSubsystem.h"
 #include "ECROnlineSubsystem.generated.h"
 
 
